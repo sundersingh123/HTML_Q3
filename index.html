@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Document</title>
+</head>
+<body>
+    <fieldset>
+        <legend>Background Information</legend>
+    <form action="">
+        <table>
+            <tr>
+                <td><label for="name">Full Name<span style="color: red;"><sup>*</sup></span> : </label></td>
+                <td><input type="text" id="name" autofocus required></td>
+                <td><label for="relatives">Relative : </label></td>
+                <td><input type="text" id="relatives"></td>
+                <td><label>Criminal Record<span style="color: red;" ><sup>*</sup></span> : </label></td>
+                <td><input type="radio" id="r1" name="record" required>Yes
+                <input type="radio" id="r2"  name="record" checked>No</td>
+                </tr>
+                <tr>
+          <td><label for="age">Age<span style="color: red;"><sup>*</sup></span> : </label></td>
+          <td><input type="date" id="age" style="width: 180px;" required></td>
+                <td><label for="neighbour">Neighbours : </label></td>
+                <td><input type="text" id="neighbour"></td>
+                <td><label>Bankruptcy : </label></td>
+                <td><input type="radio" id="bank1" name="bank">Yes
+                <input type="radio" id="bank2" name="bank" checked>No</td>
+            </tr>
+            <tr>
+                <td><label for="email">Email Address<span style="color: red;"><sup>*</sup></span> : </label></td>
+                <td><input type="email" id="email" required></td>
+                <td><label for="add">Address History : </label></td>
+                <td><textarea  id="add" cols="21" rows="2"></textarea></td>
+                <td><label>Liens : </label></td>
+                <td><input type="radio" id="lien1" name="lien" checked>Yes
+                <input type="radio" id="lien2" name="lien">No</td>
+            </tr>
+            <tr> 
+                <td><label for="phone"> Phone Number<span style="color: red;"><sup>*</sup></span> : </label></td>
+                <td>+91<input type="number" id="phone"  min="10" required style="width: 180px;"></td>
+                
+                <td><label for="social">Social Networks : </label></td>
+                <td><input type="url"  id="social"></td>
+                <td><label>Property Records :</label></td>
+                <td>
+                    <input type="radio" id="crime1"  name="property" checked>Yes
+                <input type="radio" id="crime2" name="property">No
+                </td>
+            </tr>
+          <tr>
+            <td colspan="7"><input type="submit" value="Submit" class="btn" id="btn"/>
+            <input type="reset" value="Reset" class="btn"/> </td>
+          </tr>
+        </table>
+    </form>
+</fieldset>
+</body>
+</html>
